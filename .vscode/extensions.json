@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "bradlc.vscode-tailwindcss",
+        "steoates.autoimport",
+        "formulahendry.auto-rename-tag",
+        "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+        "streetsidesoftware.code-spell-checker",
+        "naumovs.color-highlight",
+        "mikestead.dotenv",
+        "dbaeumer.vscode-eslint",
+        "pkief.material-icon-theme",
+        "gruntfuggly.todo-tree"
+    ]
+}
