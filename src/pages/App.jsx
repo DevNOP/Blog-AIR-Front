@@ -6,7 +6,7 @@ function App() {
       <h1 className="text-3xl font-bold underline mb-10">Hello world! 🪐</h1>
       <h1 className="text-3xl font-bold underline mb-10">Hello world Abner</h1>
       <ButtonStart text={"Don't clicker"} />
-      <h2>Se clicar é gay.</h2>
+      <h2>Se clicar é gay</h2>
     </div>
   )
 }
