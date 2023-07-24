@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         'blue-gradient-card': '#133557',
+        'blue-dark': '#1D2D44',
       },
     },
   },
