@@ -2,7 +2,12 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'blue-gradient-card': '#133557',
+        'blue-dark': '#1D2D44',
+      },
+    },
   },
   plugins: [],
 }
