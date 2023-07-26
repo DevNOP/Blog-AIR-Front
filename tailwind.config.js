@@ -4,7 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#0F121D',
+        'blue-gradient-card': '#133557',
+        'blue-dark': '#1D2D44',
+        'primary': '#0F121D',
         'button-blue': '#125D97',
         'button-purple': '#31085D',
         'button-green': '#0BD31F',
@@ -22,6 +24,7 @@ export default {
 
       xl: '1280px',
     },
+
   },
   plugins: [],
 }
