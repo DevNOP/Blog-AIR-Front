@@ -6,11 +6,20 @@ export default {
       colors: {
         'blue-gradient-card': '#133557',
         'blue-dark': '#1D2D44',
+        'background-page-dark': '#0F121D',
         'primary': '#0F121D',
         'button-blue': '#125D97',
         'button-purple': '#31085D',
         'button-green': '#0BD31F',
         'button-sky': '#351BD2',
+      },
+      spacing: {
+        'card-width': '900px',
+        'card-text-width': '600px',
+        26: '6.5rem',
+      },
+      backgroundImage: {
+        'rectangle-gradient': 'url(../src/assets/images/RectangleGradiend.png)',
       },
     },
     screens: {
@@ -24,7 +33,6 @@ export default {
 
       xl: '1280px',
     },
-
   },
   plugins: [],
 }

@@ -1,0 +1,12 @@
+{
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+      
+    "cSpell.language": "en,pt,pt_BR",
+    "cSpell.words": [
+      "rocketseat"
+    ],
+    
+    "files.eol": "\n"
+  }
