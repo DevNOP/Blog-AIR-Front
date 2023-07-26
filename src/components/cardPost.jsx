@@ -1,7 +1,7 @@
 export function CardPost({ image, title, qntComments, data, idCard, tags }) {
   return (
     <div
-      className="h-96 w-80 bg-gradient-to-b from-black to-blue-gradient-card rounded-lg transition ease-linear delay-75 cursor-pointer hover:scale-105"
+      className="h-96 w-80 bg-gradient-to-b from-black to-blue-gradient-card rounded-lg  cursor-pointer scale-125 mb-14"
       onClick={() => {
         console.log(idCard)
       }}
