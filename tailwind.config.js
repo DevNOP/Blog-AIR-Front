@@ -7,7 +7,7 @@ export default {
         'blue-gradient-card': '#133557',
         'blue-dark': '#1D2D44',
         'background-page-dark': '#0F121D',
-        'primary': '#0F121D',
+        primary: '#0F121D',
         'button-blue': '#125D97',
         'button-purple': '#31085D',
         'button-green': '#0BD31F',
