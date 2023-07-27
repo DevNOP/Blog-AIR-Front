@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { Navbar } from '../components/navbar'
 import { Outlet, useLocation, useNavigate } from 'react-router-dom'
 
-export function Content() {
+export default function Content() {
   const location = useLocation()
   const navigate = useNavigate()
 

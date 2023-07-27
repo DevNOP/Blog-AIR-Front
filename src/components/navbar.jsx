@@ -1,8 +1,10 @@
+import { useNavigate } from 'react-router-dom'
 import { ButtonLogin } from './buttonLogin'
 import React, { useState } from 'react'
 
 export function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false)
+  const navigate = useNavigate()
 
   function Menu() {
     setMenuOpen(!isMenuOpen)
@@ -29,7 +31,12 @@ export function Navbar() {
           isMenuOpen ? 'top-[60px] opacity-100' : '-z-1 opacity-0 top-[-400px]'
         } md:z-auto md:static absolute bg-primary w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 transition-all ease-in duration-500`}
       >
-        <li className="mr-4 my-6 md:my-0 text-xl hover:text-button-blue duration-500">
+        <li
+          onClick={() => {
+            navigate('/home')
+          }}
+          className="cursor-pointer mr-4 my-6 md:my-0 text-xl hover:text-button-blue duration-500"
+        >
           Home
         </li>
         <li className="mr-4 my-6 md:my-0 text-xl hover:text-button-blue duration-500">

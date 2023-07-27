@@ -64,7 +64,7 @@ const cards = [
   },
 ]
 
-export function Home() {
+export default function Home() {
   return (
     <div className="bg-background-page-dark ">
       <div className="text-white text-center flex flex-col items-center justify-center gap-5 h-72 bg-rectangle-gradient bg-cover">
@@ -80,6 +80,7 @@ export function Home() {
       <div className="flex flex-col items-center gap-24 mt-10">
         <div className=" flex justify-center gap-7 ">
           <CardEmphasis
+            idCard={mock.idCard}
             author={mock.author}
             imgAuthor={mock.imgAuthor}
             title={mock.title}

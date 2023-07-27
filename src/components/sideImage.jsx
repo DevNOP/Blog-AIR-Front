@@ -1,6 +1,6 @@
 import mountainBackground from '../assets/images/form-background.png'
 
-export default function SideImage() {
+export function SideImage() {
   return (
     <img
       className="h-screen w-screen"

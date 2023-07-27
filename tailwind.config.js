@@ -4,7 +4,6 @@ export default {
   theme: {
     extend: {
       colors: {
-
         'bg-lr': '#111111',
         'bt-log-1': '#5098CC',
         'bt-lr-2': '#D9D9D9',

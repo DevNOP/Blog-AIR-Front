@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import Start from '../assets/images/Star.png'
 
 export function CardEmphasis({
@@ -9,10 +10,14 @@ export function CardEmphasis({
   imgCard,
   idCard,
 }) {
+  const navigate = useNavigate()
   return (
     <div
       onClick={() => {
         console.log(idCard)
+        // navigate(`/page-card/${idCard}`) ESSA E A FORMA CORRETA
+
+        navigate(`/page-card`)
       }}
       style={{ '--image-url': `url(${imgCard})` }}
       className="relative rounded-lg w-card-width cursor-pointer bg-[image:var(--image-url)] backdrop-blur-sm bg-center bg-cover p-10 "
