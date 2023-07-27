@@ -12,9 +12,11 @@ export default {
         'button-purple': '#31085D',
         'button-green': '#0BD31F',
         'button-sky': '#351BD2',
+        'main-comment': '#262D46',
       },
       spacing: {
         'card-width': '900px',
+        'card-height': '400px',
         'card-text-width': '600px',
         26: '6.5rem',
       },
