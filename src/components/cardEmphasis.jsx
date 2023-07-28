@@ -11,14 +11,16 @@ export function CardEmphasis({
   idCard,
 }) {
   const navigate = useNavigate()
+
+  const handleButtonClick = () => {
+    console.log(idCard)
+    // navigate(`/page-card/${idCard}`) ESSA E A FORMA CORRETA
+
+    navigate(`/page-card`)
+  }
   return (
     <div
-      onClick={() => {
-        console.log(idCard)
-        // navigate(`/page-card/${idCard}`) ESSA E A FORMA CORRETA
-
-        navigate(`/page-card`)
-      }}
+      onClick={handleButtonClick}
       style={{ '--image-url': `url(${imgCard})` }}
       className="relative rounded-lg w-card-width cursor-pointer bg-[image:var(--image-url)] backdrop-blur-sm bg-center bg-cover p-10 "
     >

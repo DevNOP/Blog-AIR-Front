@@ -1,3 +1,4 @@
+import { withRouter } from 'storybook-addon-react-router-v6'
 import { CardEmphasis } from '../components/cardEmphasis'
 
 export default {
@@ -6,6 +7,7 @@ export default {
   parameters: {
     layout: 'centered',
   },
+  decorators: [withRouter],
   args: {
     author: 'SpiderLinkers',
     imgAuthor:
