@@ -1,0 +1,14 @@
+{
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+      
+    "cSpell.language": "en,pt,pt_BR",
+    "cSpell.words": [
+      "chatbox",
+      "gmail",
+      "rocketseat"
+    ],
+    
+    "files.eol": "\n"
+  }
