@@ -1,16 +1,16 @@
-import { Logo } from '../components/logo'
-import { TitlePresentation } from '../components/titlePresentation'
-import { Input } from '../components/input'
-import { Buttons } from '../components/buttons'
-import { Loop } from '../components/loop'
-import { SideImage } from '../components/sideImage'
+import { Logo } from '../components/layout/logo'
+import { Input } from '../components/forms/input'
+import { Buttons } from '../components/forms/buttons'
+import { SideImage } from '../components/layout/sideImage'
 
 export default function Register() {
   return (
     <div className="grid grid-cols-2 h-screen w-screen bg-bg-lr">
       <section className="left bg-stone-900 text-white p-8">
         <Logo />
-        <TitlePresentation title="Crie a sua conta!" />
+        <div className="grid justify-items-center mb-8">
+          <h1 className="font-bold text-xl">Crie a sua conta!</h1>
+        </div>
 
         <Input name="name" span="Nome" type="text" />
         <Input
@@ -27,7 +27,16 @@ export default function Register() {
           google="Inscreva-se com o Google"
         />
 
-        <Loop account="Já tenho uma conta." loop="Login" url="/login" />
+        <div className="flex flex-col items-center">
+          <p>
+            Já tenho uma conta.
+            <a href="/login">
+              <span className="text-neutral-500 underline ml-1 hover:text-neutral-300 cursor-pointer">
+                Login
+              </span>
+            </a>
+          </p>
+        </div>
       </section>
 
       <section>

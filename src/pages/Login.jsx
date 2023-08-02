@@ -1,19 +1,19 @@
-import { Logo } from '../components/logo'
-import { TitlePresentation } from '../components/titlePresentation'
-import { Input } from '../components/input'
-import { Buttons } from '../components/buttons'
-import { Loop } from '../components/loop'
-import { SideImage } from '../components/sideImage'
+import { Logo } from '../components/layout/logo'
+import { Input } from '../components/forms/input'
+import { Buttons } from '../components/forms/buttons'
+import { SideImage } from '../components/layout/sideImage'
 
 export default function Login() {
   return (
     <div className="grid grid-cols-2 h-screen w-screen bg-bg-lr">
-      <section className="left bg-stone-900 text-white p-8">
+      <section className="bg-stone-900 text-white p-8">
         <Logo />
-        <TitlePresentation
-          title="Seja bem-vindo de volta!"
-          subtitle="Por favor entre com as suas informações de login"
-        />
+        <div className="grid justify-items-center mb-8">
+          <h1 className="font-bold text-xl">Seja bem-vindo de volta!</h1>
+          <p className="text-neutral-500 text-center">
+            Por favor entre com as suas informações de login
+          </p>
+        </div>
 
         <Input
           name="email"
@@ -29,7 +29,16 @@ export default function Login() {
           google="Continuar com o Google"
         />
 
-        <Loop account="Não tem uma conta?" loop="Registre-se" url="/register" />
+        <div className="flex flex-col items-center">
+          <p>
+            Não tem uma conta?
+            <a href="/register">
+              <span className="text-neutral-500 underline ml-1 hover:text-neutral-300 cursor-pointer">
+                Registre-se
+              </span>
+            </a>
+          </p>
+        </div>
       </section>
 
       <section>

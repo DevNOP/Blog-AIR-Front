@@ -1,4 +1,4 @@
-import { RadioButton } from './radioButton'
+import { RadioButton } from '../forms/radioButton'
 import { useState } from 'react'
 
 export function CardSurvey({ question, options }) {

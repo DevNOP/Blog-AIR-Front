@@ -1,4 +1,4 @@
-import { RadioButton } from '../components/radioButton'
+import { RadioButton } from '../components/buttons/radioButton'
 
 export default {
   title: 'Components/RadioButton',
