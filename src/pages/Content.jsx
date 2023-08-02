@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Navbar } from '../components/navbar'
+import { Navbar } from '../components/layout/navbar'
 import { Outlet, useLocation, useNavigate } from 'react-router-dom'
 
 export default function Content() {

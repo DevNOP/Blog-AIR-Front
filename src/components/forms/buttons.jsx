@@ -1,4 +1,4 @@
-import googleIcon from '../assets/icons/google.png'
+import googleIcon from '../../assets/icons/google.png'
 
 export function Buttons({ styleButton, button, google }) {
   return (

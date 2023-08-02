@@ -1,4 +1,4 @@
-import { ButtonRespond } from './buttonRespond'
+import { ButtonRespond } from '../forms/buttonRespond'
 
 export function SecondComment({
   author,

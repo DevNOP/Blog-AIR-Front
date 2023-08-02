@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import Start from '../assets/images/Star.png'
+import Start from '../../assets/images/Star.png'
 
 export function CardEmphasis({
   author,
