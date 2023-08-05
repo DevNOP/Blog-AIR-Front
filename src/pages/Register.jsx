@@ -1,7 +1,8 @@
 import { Logo } from '../components/layout/logo'
 import { Input } from '../components/forms/input'
-import { Buttons } from '../components/forms/buttons'
+import { ButtonLogReg } from '../components/forms/buttonLogReg'
 import { SideImage } from '../components/layout/sideImage'
+import { ButtonGoogle } from '../components/forms/buttonGoogle'
 
 export default function Register() {
   return (
@@ -21,11 +22,13 @@ export default function Register() {
         />
         <Input name="pass" span="Senha" type="password" />
 
-        <Buttons
-          styleButton="text-black my-4 h-10 rounded-lg bg-gradient-to-r from-bt-reg-1 to-bt-lr-2 hover:bg-gradient-to-r hover:from-bt-reg-h-1 hover:to-bt-reg-h-2 transition ease-in-out hover:-translate-y-1 duration-300 hover:scale-110"
-          button="Registrar"
-          google="Inscreva-se com o Google"
-        />
+        <div className="flex flex-col m-auto lg:w-4/5">
+          <ButtonLogReg
+            styleButton="text-black my-4 h-10 rounded-lg bg-gradient-to-r from-bt-reg-1 to-bt-lr-2 hover:bg-gradient-to-r hover:from-bt-reg-h-1 hover:to-bt-reg-h-2 transition ease-in-out hover:-translate-y-1 duration-300 hover:scale-110"
+            button="Registrar"
+          />
+          <ButtonGoogle google="Inscreva-se com o Google" />
+        </div>
 
         <div className="flex flex-col items-center">
           <p>
