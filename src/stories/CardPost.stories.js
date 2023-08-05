@@ -1,4 +1,4 @@
-import { CardPost } from '../components/cardPost'
+import { CardPost } from '../components/cards/cardPost'
 
 export default {
   title: 'Components/CardPost',

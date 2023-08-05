@@ -1,5 +1,5 @@
 import { withRouter } from 'storybook-addon-react-router-v6'
-import { CardEmphasis } from '../components/cardEmphasis'
+import { CardEmphasis } from '../components/cards/cardEmphasis'
 
 export default {
   title: 'Components/CardEmphasis',

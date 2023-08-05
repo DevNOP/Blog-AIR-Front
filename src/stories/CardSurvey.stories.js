@@ -1,4 +1,4 @@
-import { CardSurvey } from '../components/cardSurvey'
+import { CardSurvey } from '../components/cards/cardSurvey'
 
 export default {
   title: 'Components/CardSurvey',

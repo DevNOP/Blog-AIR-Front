@@ -1,4 +1,4 @@
-import mountainBackground from '../assets/images/form-background.png'
+import mountainBackground from '../../assets/images/form-background.png'
 
 export function SideImage() {
   return (

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { ButtonLogin } from './buttonLogin'
+import { ButtonLogin } from '../forms/buttonLogin'
 import React, { useState } from 'react'
 
 export function Navbar() {

@@ -1,7 +1,7 @@
-import { ButtonComment } from '../components/buttonComment'
-import { CardPagePost } from '../components/cardPagePost'
-import { MainComment } from '../components/mainComment'
-import { SecondComment } from '../components/secondComment'
+import { ButtonComment } from '../components/forms/buttonComment'
+import { CardPagePost } from '../components/cards/cardPagePost'
+import { MainComment } from '../components/comments/mainComment'
+import { SecondComment } from '../components/comments/secondComment'
 
 const mock = {
   author: 'SpiderLinkers',
