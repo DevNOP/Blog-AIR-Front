@@ -1,7 +1,7 @@
-import { ButtonComment } from '../components/forms/buttonComment'
+import { ButtonComment } from '../../components/forms/buttonComment'
 
 export default {
-  title: 'Components/ButtonComment',
+  title: 'Components/Forms/ButtonComment',
   component: ButtonComment,
   parameters: {
     layout: 'centered',

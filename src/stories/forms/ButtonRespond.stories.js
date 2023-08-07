@@ -1,7 +1,7 @@
-import { ButtonRespond } from '../components/forms/buttonRespond'
+import { ButtonRespond } from '../../components/forms/buttonRespond'
 
 export default {
-  title: 'Components/ButtonRespond',
+  title: 'Components/Forms/ButtonRespond',
   component: ButtonRespond,
   parameters: {
     layout: 'centered',

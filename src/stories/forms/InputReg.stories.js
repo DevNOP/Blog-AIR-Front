@@ -1,7 +1,7 @@
-import { Input } from '../components/forms/input'
+import { Input } from '../../components/forms/input'
 
 export default {
-  title: 'Components/Input',
+  title: 'Components/Forms/Input',
   component: Input,
   parameters: {
     layout: 'centered',

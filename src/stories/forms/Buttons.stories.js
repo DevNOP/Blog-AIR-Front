@@ -1,7 +1,7 @@
-import { ButtonLogReg } from '../components/forms/buttonLogReg'
+import { ButtonLogReg } from '../../components/forms/buttonLogReg'
 
 export default {
-  title: 'Components/Buttons',
+  title: 'Components/Forms/Buttons',
   component: ButtonLogReg,
   parameters: {
     layout: 'centered',

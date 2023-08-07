@@ -1,9 +1,12 @@
 import { withRouter } from 'storybook-addon-react-router-v6'
-import PageCard from '../pages/PageCard'
+import Home from '../../pages/Home'
 
 export default {
-  title: 'Pages/PageCard',
-  component: PageCard,
+  title: 'Components/Pages/Home',
+  component: Home,
+  parameters: {
+    layout: 'centered',
+  },
   decorators: [withRouter],
 }
 

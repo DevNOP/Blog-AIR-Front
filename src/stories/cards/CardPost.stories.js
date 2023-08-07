@@ -1,7 +1,7 @@
-import { CardPost } from '../components/cards/cardPost'
+import { CardPost } from '../../components/cards/cardPost'
 
 export default {
-  title: 'Components/CardPost',
+  title: 'Components/Cards/CardPost',
   component: CardPost,
   parameters: {
     layout: 'centered',

@@ -1,7 +1,7 @@
-import { ButtonGoogle } from '../components/forms/buttonGoogle'
+import { ButtonGoogle } from '../../components/forms/buttonGoogle'
 
 export default {
-  title: 'Components/ButtonGoogle',
+  title: 'Components/Forms/ButtonGoogle',
   component: ButtonGoogle,
   parameters: {
     layout: 'centered',

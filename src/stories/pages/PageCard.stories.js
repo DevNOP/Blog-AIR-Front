@@ -1,9 +1,9 @@
 import { withRouter } from 'storybook-addon-react-router-v6'
-import Login from '../pages/Login'
+import PageCard from '../../pages/PageCard'
 
 export default {
-  title: 'Pages/Login',
-  component: Login,
+  title: 'Components/Pages/PageCard',
+  component: PageCard,
   decorators: [withRouter],
 }
 
