@@ -1,7 +1,8 @@
 import { Logo } from '../components/layout/logo'
 import { Input } from '../components/forms/input'
-import { Buttons } from '../components/forms/buttons'
+import { ButtonLogReg } from '../components/forms/buttonLogReg'
 import { SideImage } from '../components/layout/sideImage'
+import { ButtonGoogle } from '../components/forms/buttonGoogle'
 
 export default function Login() {
   return (
@@ -23,11 +24,13 @@ export default function Login() {
         />
         <Input name="pass" span="Senha" type="password" />
 
-        <Buttons
-          styleButton="text-black my-4 h-10 rounded-lg bg-gradient-to-r from-bt-log-1 to-bt-lr-2 hover:bg-gradient-to-r hover:from-bt-log-h-1 hover:to-bt-log-h-2 hover:text-bt-text-log-h transition ease-in-out hover:-translate-y-1 duration-300 hover:scale-110"
-          button="Login"
-          google="Continuar com o Google"
-        />
+        <div className="flex flex-col m-auto lg:w-4/5">
+          <ButtonLogReg
+            styleButton="text-black my-4 h-10 rounded-lg bg-gradient-to-r from-bt-log-1 to-bt-lr-2 hover:bg-gradient-to-r hover:from-bt-log-h-1 hover:to-bt-log-h-2 hover:text-bt-text-log-h transition ease-in-out hover:-translate-y-1 duration-300 hover:scale-110"
+            button="Login"
+          />
+          <ButtonGoogle google="Continuar com o Google" />
+        </div>
 
         <div className="flex flex-col items-center">
           <p>

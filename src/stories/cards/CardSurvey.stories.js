@@ -1,7 +1,7 @@
-import { CardSurvey } from '../components/cards/cardSurvey'
+import { CardSurvey } from '../../components/cards/cardSurvey'
 
 export default {
-  title: 'Components/CardSurvey',
+  title: 'Components/Cards/CardSurvey',
   component: CardSurvey,
   parameters: {
     layout: 'centered',

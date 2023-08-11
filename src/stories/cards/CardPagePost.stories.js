@@ -1,13 +1,8 @@
-import { withRouter } from 'storybook-addon-react-router-v6'
-import { CardEmphasis } from '../components/cards/cardEmphasis'
+import { CardPagePost } from '../../components/cards/cardPagePost'
 
 export default {
-  title: 'Components/CardEmphasis',
-  component: CardEmphasis,
-  parameters: {
-    layout: 'centered',
-  },
-  decorators: [withRouter],
+  title: 'Components/Cards/CardPagePost',
+  component: CardPagePost,
   args: {
     author: 'SpiderLinkers',
     imgAuthor:
@@ -18,6 +13,8 @@ export default {
       'https://wallpapers.com/images/hd/macbook-pro-color-explosion-art-ush01ydpoljxqp3o.jpg',
     idCard: 1,
     tags: ['MacBook', 'Apple', 'Desenvolvimento'],
+    question: 'O que vocês querem ver por aqui  ? 🤔',
+    options: ['Front-end', 'Back-end', 'DevOps'],
   },
 }
 
