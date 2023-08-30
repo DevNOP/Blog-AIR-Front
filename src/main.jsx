@@ -12,6 +12,8 @@ import Register from './pages/Register'
 import Home from './pages/Home'
 import Content from './pages/Content'
 import PageCard from './pages/PageCard'
+import ResetPasswordOne from './pages/ResetPasswordOne'
+import ResetPasswordTwo from './pages/ResetPasswordTwo'
 
 // Para adicionar uma nova página crie mais um objeto dentro do array
 // https://reactrouter.com/en/main/start/tutorial -> documentação do react-router-dom
@@ -39,6 +41,16 @@ const router = createBrowserRouter([
   {
     path: '/register',
     element: <Register />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/reset-password',
+    element: <ResetPasswordOne />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/reset-password-tokenHere',
+    element: <ResetPasswordTwo />,
     errorElement: <ErrorPage />,
   },
 ])
