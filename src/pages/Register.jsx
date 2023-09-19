@@ -1,16 +1,23 @@
-import { Logo } from '../components/logo'
-import { TitlePresentation } from '../components/titlePresentation'
-import { Input } from '../components/input'
-import { Buttons } from '../components/buttons'
-import { Loop } from '../components/loop'
-import { SideImage } from '../components/sideImage'
+import { Logo } from '../components/layout/logo'
+import { Input } from '../components/forms/input'
+import { ButtonLogReg } from '../components/forms/buttonLogReg'
+import { SideImage } from '../components/layout/sideImage'
+import { ButtonGoogle } from '../components/forms/buttonGoogle'
+import { useNavigate } from 'react-router-dom'
 
 export default function Register() {
+  const navigate = useNavigate()
+
+  const handleButtonClick = () => {
+    navigate('/login')
+  }
   return (
     <div className="grid grid-cols-2 h-screen w-screen bg-bg-lr">
       <section className="left bg-stone-900 text-white p-8">
         <Logo />
-        <TitlePresentation title="Crie a sua conta!" />
+        <div className="grid justify-items-center mb-8">
+          <h1 className="font-bold text-xl">Crie a sua conta!</h1>
+        </div>
 
         <Input name="name" span="Nome" type="text" />
         <Input
@@ -21,13 +28,24 @@ export default function Register() {
         />
         <Input name="pass" span="Senha" type="password" />
 
-        <Buttons
-          styleButton="text-black my-4 h-10 rounded-lg bg-gradient-to-r from-bt-reg-1 to-bt-lr-2 hover:bg-gradient-to-r hover:from-bt-reg-h-1 hover:to-bt-reg-h-2 transition ease-in-out hover:-translate-y-1 duration-300 hover:scale-110"
-          button="Registrar"
-          google="Inscreva-se com o Google"
-        />
+        <div className="flex flex-col m-auto lg:w-96">
+          <ButtonLogReg
+            styleButton="text-black my-4 h-10 rounded-lg bg-gradient-to-r from-bt-reg-1 to-bt-lr-2 hover:bg-gradient-to-r hover:from-bt-reg-h-1 hover:to-bt-reg-h-2 transition ease-in-out hover:-translate-y-1 duration-300 hover:scale-110"
+            button="Registrar"
+          />
+          <ButtonGoogle google="Inscreva-se com o Google" />
+        </div>
 
-        <Loop account="Já tenho uma conta." loop="Login" url="/login" />
+        <div className="flex flex-col items-center">
+          <p>
+            Já tenho uma conta.
+            <a onClick={handleButtonClick}>
+              <span className="text-neutral-500 underline ml-1 hover:text-neutral-300 cursor-pointer">
+                Login
+              </span>
+            </a>
+          </p>
+        </div>
       </section>
 
       <section>

@@ -1,6 +1,6 @@
-import { CardEmphasis } from '../components/cardEmphasis'
-import { CardPost } from '../components/cardPost'
-import { CardSurvey } from '../components/cardSurvey'
+import { CardEmphasis } from '../components/cards/cardEmphasis'
+import { CardPost } from '../components/cards/cardPost'
+import { CardSurvey } from '../components/cards/cardSurvey'
 
 const mock = {
   author: 'SpiderLinkers',
