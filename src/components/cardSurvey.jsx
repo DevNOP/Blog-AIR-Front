@@ -11,7 +11,20 @@ export function CardSurvey({ question, options }) {
   }
 
   return (
-    <div className="h-96 lg:w-80 lg:inline-block sm:w-80 sm:flex sm:flex-col sm:items-center bg-gradient-to-b from-black to-blue-gradient-card rounded-lg text-center p-7">
+    <div
+      className="h-96 
+      lg:w-80 
+      lg:inline-block 
+
+      md:mr-5 
+      
+      sm:w-80 
+      sm:flex 
+      sm:flex-col 
+      sm:items-center 
+      
+      bg-gradient-to-b from-black to-blue-gradient-card rounded-lg text-center p-7"
+    >
       <h1 className="font-sans font-normal text-white text-2xl">{question}</h1>
       <ul>
         {options &&

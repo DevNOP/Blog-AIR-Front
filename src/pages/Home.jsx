@@ -68,8 +68,23 @@ export default function Home() {
   return (
     <div className="bg-background-page-dark ">
       <div className="text-white text-center flex flex-col items-center justify-center gap-5 h-72 bg-rectangle-gradient bg-cover">
-        <h1 className="text-4xl font-sans">Blog dos SpiderLinkers</h1>
-        <p className="w-card-text-width text-center">
+        <h1
+          className="
+          xl:text-4xl 
+          sm:text-3xl 
+        
+        font-sans"
+        >
+          Blog dos SpiderLinkers
+        </h1>
+        <p
+          className="
+          xl:w-card-text-width 
+          md:w-96 
+          sm:w-80 
+          
+          text-center"
+        >
           Bem-vindo ao nosso blog de tecnologia! Aqui, desvendamos o mundo da
           inovação, compartilhando novidades, análises e dicas práticas para que
           você aproveite ao máximo o potencial da tecnologia em sua vida diária.
@@ -78,7 +93,17 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col items-center gap-24 mt-10">
-        <div className=" flex justify-center gap-7 ">
+        <div
+          className="flex 
+
+          xl:justify-center xl:flex-row xl:items-stretch
+
+          lg:flex-row lg:justify-center lg:items-stretch
+
+          md:flex-row md:justify-center md:items-stretch 
+
+          sm:flex-col sm:items-center gap-7 "
+        >
           <CardEmphasis
             idCard={mock.idCard}
             author={mock.author}
@@ -90,7 +115,21 @@ export default function Home() {
           />
           <CardSurvey options={mock.options} question={mock.question} />
         </div>
-        <div className="grid grid-cols-3 gap-26">
+        <div
+          className="grid 
+          xl:grid-cols-3 
+          xl:gap-26 
+
+          lg:grid-cols-3 
+          lg:gap-26 
+
+          md:grid-cols-2
+          md:gap-32
+          
+
+          sm:grid-cols-1 
+          sm:gap-20"
+        >
           {cards &&
             cards.map((card) => <CardPost key={card.idCard} {...card} />)}
         </div>
