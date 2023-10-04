@@ -1,6 +1,6 @@
 export function Input({ name, span, type, placeholder }) {
   return (
-    <section className="flex flex-col m-auto mb-4 w-96">
+    <section className="flex flex-col m-auto mb-4 xl:w-96 sm:w-80">
       <label htmlFor={name} className="flex flex-col text-neutral-400">
         <div className="flex gap-1">
           {span} <div className="text-blue-500">*</div>
