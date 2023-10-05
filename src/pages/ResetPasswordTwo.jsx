@@ -19,17 +19,24 @@ export default function ResetPasswordTwo() {
 
   return (
     <div className="bg-background-page-dark h-screen p-5">
-      <div className="w-32">
+      <div
+        className=" 
+        xl:w-32 
+        lg:w-32 
+        md:w-20 
+        sm:w-16
+        "
+      >
         <img src={SpiderLinkerLogo} alt="" />
       </div>
 
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center">
-          <div className="w-24 mb-10">
+          <div className="xl:w-24 lg:w-20 sm:w-20  mb-10">
             <img src={KeyOutline} alt="" />
           </div>
           <div className="flex flex-col items-center mb-10">
-            <h2 className="mb-5 text-2xl text-white">
+            <h2 className="mb-5 text-2xl text-white sm:text-center">
               Por favor, coloque a nova senha !
             </h2>
           </div>
@@ -57,7 +64,7 @@ export default function ResetPasswordTwo() {
 
             <button
               onClick={changeStatus}
-              className="text-black font-bold w-96 mt-5 h-12 rounded-lg bg-gradient-to-r from-bt-log-1 to-bt-lr-2 hover:bg-gradient-to-r hover:from-bt-log-h-1 hover:to-bt-log-h-2 hover:text-bt-text-log-h transition ease-in-out hover:-translate-y-1 duration-300 hover:scale-110"
+              className="text-black font-bold xl:w-96 sm:w-80 mt-5 h-12 rounded-lg bg-gradient-to-r from-bt-log-1 to-bt-lr-2 hover:bg-gradient-to-r hover:from-bt-log-h-1 hover:to-bt-log-h-2 hover:text-bt-text-log-h transition ease-in-out hover:-translate-y-1 duration-300 hover:scale-110"
             >
               Redefinir a senha
             </button>
