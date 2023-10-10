@@ -11,11 +11,15 @@ export function Navbar() {
   }
 
   return (
-    <nav className="md:flex md:justify-around md:items-center bg-primary p-3 text-gray-100">
+    <nav
+      className="bg-primary p-3 text-gray-100 
+      md:flex md:justify-around md:items-center"
+    >
       <div className="flex justify-between items-center">
         <h1 className="text-lg font-bold ">SpiderLinkers</h1>
         <span
-          className="text-3xl cursor-pointer md:hidden block"
+          className="text-3xl cursor-pointer 
+          md:hidden block"
           onClick={Menu}
         >
           {isMenuOpen ? (
@@ -29,20 +33,22 @@ export function Navbar() {
       <ul
         className={`md:flex ${
           isMenuOpen ? 'top-[60px] opacity-100' : '-z-1 opacity-0 top-[-400px]'
-        } md:z-auto md:static absolute bg-primary w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 transition-all ease-in duration-500`}
+        } absolute bg-primary w-full left-0 py-4 pl-7 transition-all ease-in duration-500
+          md:z-auto md:static md:w-auto md:py-0 md:pl-0 md:opacity-100
+          sm:z-10`}
       >
         <li
           onClick={() => {
             navigate('/home')
           }}
-          className="cursor-pointer mr-4 my-6 md:my-0 text-xl hover:text-button-blue duration-500"
+          className="cursor-pointer mr-4 my-6 text-xl hover:text-button-blue duration-500 md:my-0 "
         >
           Home
         </li>
-        <li className="mr-4 my-6 md:my-0 text-xl hover:text-button-blue duration-500">
+        <li className="mr-4 my-6 text-xl hover:text-button-blue duration-500 md:my-0">
           Sobre nós
         </li>
-        <li className="mr-4 my-6 md:my-0 text-xl hover:text-button-blue duration-500">
+        <li className="mr-4 my-6 text-xl hover:text-button-blue duration-500 md:my-0">
           Contato
         </li>
         <li className="lg:hidden sm:inline-block">
