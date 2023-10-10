@@ -44,7 +44,7 @@ const secondComment = {
 
 export default function PageCard() {
   return (
-    <div className="bg-primary h-full">
+    <main className="bg-primary h-full">
       <CardPagePost
         author={mock.author}
         imgAuthor={mock.imgAuthor}
@@ -53,44 +53,54 @@ export default function PageCard() {
         imgCard={mock.imgCard}
         tags={mock.tags}
       />
-      <section className="text-gray-100 px-52 mt-10">
-        <h1 className="text-3xl font-semibold mb-10">{post.title}</h1>
-        <p className="text-xl ">{post.text}</p>
-      </section>
-      <hr className="mx-48 mt-20"></hr>
-      <div className="px-52 mt-10">
-        <ButtonComment text={'Comentar'} />
+      <div
+        className="xl:px-52
+       sm:px-6"
+      >
+        <section className="text-gray-100 mt-10">
+          <h1 className="text-3xl font-semibold mb-10">{post.title}</h1>
+          <p
+            className="md:text-xl
+           sm:text-lg"
+          >
+            {post.text}
+          </p>
+        </section>
+        <hr className="mt-20"></hr>
+        <div className="mt-10">
+          <ButtonComment text={'Comentar'} />
+        </div>
+        <div className="">
+          <MainComment
+            author={comment.author}
+            imgPerfil={comment.imgPerfil}
+            date={comment.date}
+            like={comment.like}
+            text={comment.text}
+          />
+        </div>
+        <hr className="mt-5"></hr>
+        <div>
+          <SecondComment
+            author={secondComment.author}
+            imgPerfil={secondComment.imgPerfil}
+            date={secondComment.date}
+            like={secondComment.like}
+            text={secondComment.text}
+            comment={secondComment.comment}
+          />
+        </div>
+        <div>
+          <SecondComment
+            author={secondComment.author}
+            imgPerfil={secondComment.imgPerfil}
+            date={secondComment.date}
+            like={secondComment.like}
+            text={secondComment.text}
+            comment={secondComment.comment}
+          />
+        </div>
       </div>
-      <div>
-        <MainComment
-          author={comment.author}
-          imgPerfil={comment.imgPerfil}
-          date={comment.date}
-          like={comment.like}
-          text={comment.text}
-        />
-      </div>
-      <hr className="mx-48 mt-5"></hr>
-      <div>
-        <SecondComment
-          author={secondComment.author}
-          imgPerfil={secondComment.imgPerfil}
-          date={secondComment.date}
-          like={secondComment.like}
-          text={secondComment.text}
-          comment={secondComment.comment}
-        />
-      </div>
-      <div>
-        <SecondComment
-          author={secondComment.author}
-          imgPerfil={secondComment.imgPerfil}
-          date={secondComment.date}
-          like={secondComment.like}
-          text={secondComment.text}
-          comment={secondComment.comment}
-        />
-      </div>
-    </div>
+    </main>
   )
 }
